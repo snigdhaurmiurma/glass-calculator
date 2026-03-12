@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glass Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-circle circle1"></div>
+  <div class="bg-circle circle2"></div>
+  <div class="bg-circle circle3"></div>
+
+  <main class="wrapper">
+    <section class="calculator">
+      <div class="screen">
+        <div id="history" class="history"></div>
+        <input id="display" class="display" type="text" value="0" readonly />
+      </div>
+
+      <div class="buttons">
+        <button class="btn top-btn" data-value="AC">AC</button>
+        <button class="btn top-btn" data-value="DEL">DEL</button>
+        <button class="btn top-btn" data-value="%">%</button>
+        <button class="btn operator-btn" data-value="/">÷</button>
+
+        <button class="btn num-btn" data-value="7">7</button>
+        <button class="btn num-btn" data-value="8">8</button>
+        <button class="btn num-btn" data-value="9">9</button>
+        <button class="btn operator-btn" data-value="*">×</button>
+
+        <button class="btn num-btn" data-value="4">4</button>
+        <button class="btn num-btn" data-value="5">5</button>
+        <button class="btn num-btn" data-value="6">6</button>
+        <button class="btn operator-btn" data-value="-">−</button>
+
+        <button class="btn num-btn" data-value="1">1</button>
+        <button class="btn num-btn" data-value="2">2</button>
+        <button class="btn num-btn" data-value="3">3</button>
+        <button class="btn operator-btn" data-value="+">+</button>
+
+        <button class="btn num-btn zero" data-value="0">0</button>
+        <button class="btn num-btn" data-value=".">.</button>
+        <button class="btn operator-btn" data-value="=">=</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
